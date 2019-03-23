@@ -1,0 +1,25 @@
+{
+  "name": "vuebundler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    "devbundle": "npm run webpack -- --mode development",
+    "prodbundle": "npm run webpack -- --mode production",
+    "start" : "node server/server.js",
+    "prod": "npm run prodbundle && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "hbs": "^4.0.3"
+  }
+}
